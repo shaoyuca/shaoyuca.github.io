@@ -17,7 +17,7 @@ export default function CoursesLoading() {
           </div>
           {/* Video button */}
           <Skeleton className="h-9 w-48 mb-4" />
-          {/* Video iframe — 手机矮，桌面高 */}
+          {/* Video iframe — shorter on mobile, taller on desktop */}
           <SkeletonImage className="h-52 md:h-96 w-full mb-8" />
           {/* Student work */}
           <Skeleton className="h-7 w-36 mb-4" />

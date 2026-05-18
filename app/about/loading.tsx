@@ -19,7 +19,7 @@ export default function AboutLoading() {
         <Skeleton className="h-4 w-full" />
         <Skeleton className="h-4 w-3/4" />
       </div>
-      {/* Image row — 手机 2 列，桌面 4 列 */}
+      {/* Image row — 2 cols on mobile, 4 on desktop */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-10 md:mb-12">
         {[...Array(4)].map((_, i) => (
           <div key={i} className="space-y-2">
@@ -35,7 +35,7 @@ export default function AboutLoading() {
         <Skeleton className="h-4 w-full" />
         <Skeleton className="h-4 w-2/3" />
       </div>
-      {/* Image row — 手机 2 列，桌面 3 列 */}
+      {/* Image row — 2 cols on mobile, 3 on desktop */}
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 mb-10 md:mb-12">
         {[...Array(3)].map((_, i) => (
           <div key={i} className="space-y-2">
@@ -57,7 +57,7 @@ export default function AboutLoading() {
 
       <hr className="border-gray-200 dark:border-gray-800 my-10 md:my-12" />
 
-      {/* Contact — 手机单列，桌面双列 */}
+      {/* Contact — single col on mobile, two cols on desktop */}
       <Skeleton className="h-6 md:h-7 w-28 md:w-32 mb-6" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         <SkeletonImage className="h-48 md:h-60 w-full" />
