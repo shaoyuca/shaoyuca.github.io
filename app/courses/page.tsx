@@ -1,8 +1,16 @@
+import CourseBlock from '@/components/courses/CourseBlock'
+import { COURSES } from '@/content/courses'
+
 export default function CoursesPage() {
   return (
-    <main className="max-w-prose px-10 pt-6 pb-section">
-      <h1 className="text-h1 font-bold font-serif">Courses</h1>
-      <p className="text-body text-[#6B6B6B] mt-4">Page coming soon.</p>
+    <main className="w-full px-10 pt-6 pb-section">
+      <h1 className="text-h1 font-bold font-serif mb-8">Courses</h1>
+
+      <div>
+        {COURSES.map((course) => (
+          <CourseBlock key={course.title} course={course} />
+        ))}
+      </div>
     </main>
   )
 }
