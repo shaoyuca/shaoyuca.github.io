@@ -77,6 +77,19 @@ export const PUBLICATIONS: YearGroup[] = [
         ],
       },
       {
+        // Stress test: maximum realistic title + 20-author list + full venue string with DOI
+        title: 'ThermoFlux: A Wearable Thermoregulatory Feedback Array Using Micro-Peltier Elements and Distributed Skin-Contact Sensors for Adaptive Thermal Comfort Management in Occupational and Athletic Environments: System Architecture, Perceptual Calibration, and Longitudinal Field Deployment',
+        authors: (
+          <><Strong>Alice Chen</Strong><Corresponding />, Bob Smith, Carol Williams, David Lee, Eve Martinez, Frank Nguyen, Grace Kim, Henry Park, Ivan Torres, Joan Liu, Kevin Zhang, Laura Patel, Michael Brown, Nancy Wilson, Oscar Garcia, Patricia Adams, Quinn Baker, Rachel Clark, Samuel Davis, Teresa Evans, Uma Fernandez, Victor Hassan, Wendy Ishida, Xavier Johnson, Yuki Kawamoto, Zara Larsson, Aaron Mitchell, Bella Nakamura, Carlos Ortega, Diana Petrov, Ethan Quinn, Fiona Romano, George Santos, Hannah Tanaka, Ibrahim Ueda, Julia Vasquez, Klaus Weber, Lily Xu, Marco Yamamoto, Nina Zhao</>
+        ),
+        venue: 'In Proceedings of the 2026 ACM CHI Conference on Human Factors in Computing Systems (CHI \'26), Honolulu, Hawaii, USA, April 26 – May 1, 2026. ACM, New York, NY, USA, 24 pages. https://doi.org/10.1145/XXXXXXX.XXXXXXX',
+        award: <>🏆 Best Paper Award — <Strong>CHI 2026</Strong></>,
+        links: [
+          { label: 'PDF',   href: 'https://dl.acm.org' },
+          { label: 'Video', href: 'https://example.com' },
+        ],
+      },
+      {
         // Example: lab owner (bold) is NOT the corresponding author — they are different people
         title: '[Paper Title] Another Sample Paper on Wearable Computing',
         authors: (

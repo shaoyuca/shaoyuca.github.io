@@ -123,26 +123,26 @@ export const DIRECTIONS: Direction[] = [
         mediaSrc: 'https://picsum.photos/seed/proj3/400/300',
         mediaAlt: 'KnitSense wearable sensor demo',
       },
+    ],
+  },
+  {
+    title: 'Long Text Stress Test',
+    imageSrc: 'https://picsum.photos/seed/stress/1600/900',
+    imageAlt: 'Stress test direction banner',
+    projects: [
       {
-        title: 'ThreadNet: A Wireless Sensor Network Embedded in Everyday Garments',
-        authors: <>Ivan Torres, <Strong>Grace Kim</Strong>, Joan Liu</>,
-        venue: <><Strong>IMWUT</Strong>, Vol. 7, Issue 3, 2023</>,
+        // Stress test: very long title (~220 chars), 15-author list, full venue string with DOI
+        title: 'PolyBend: A Continuous Morphological Transformation Framework for Bistable Lattice Structures in Computationally Actuated Furniture and Architectural Surface Systems Toward Seamless Physical Reconfiguration Without Mechanical Fasteners',
+        authors: (
+          <><Strong>Alice Chen</Strong>, Bob Smith, Carol Williams, David Lee, Eve Martinez, Frank Nguyen, Grace Kim, Henry Park, Ivan Torres, Joan Liu, Kevin Zhang, Laura Patel, Michael Brown, Nancy Wilson, Oscar Garcia</>
+        ),
+        venue: 'In Proceedings of the 2024 ACM CHI Conference on Human Factors in Computing Systems (CHI \'24), Honolulu, Hawaii, USA, May 11–16, 2024. ACM, New York, NY, USA, 24 pages. https://doi.org/10.1145/XXXXXXX.XXXXXXX',
         links: [
-          { label: 'PDF', href: 'https://example.com/paper4.pdf' },
+          { label: 'PDF',   href: 'https://example.com/paper.pdf' },
+          { label: 'Video', href: 'https://example.com/video' },
         ],
-        mediaSrc: 'https://picsum.photos/seed/proj4/400/300',
-        mediaAlt: 'ThreadNet garment sensor overview',
-      },
-      {
-        title: 'ChronoFabric: Time-Aware Textiles That React to Daily Routines',
-        authors: <><Strong>Joan Liu</Strong>, Ivan Torres, Bob Smith</>,
-        venue: <>Proceedings of <Strong>UIST 2022</Strong>, Bend, Oregon, USA</>,
-        links: [
-          { label: 'PDF',   href: 'https://example.com/paper5.pdf' },
-          { label: 'Video', href: 'https://example.com/video5' },
-        ],
-        mediaSrc: 'https://picsum.photos/seed/proj5/400/300',
-        mediaAlt: 'ChronoFabric daily routine demo',
+        mediaSrc: 'https://picsum.photos/seed/stress1/400/300',
+        mediaAlt: 'Stress test paper thumbnail',
       },
     ],
   },

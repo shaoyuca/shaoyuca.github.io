@@ -16,13 +16,13 @@ export type PublicationCardProps = {
 export default function PublicationCard({ title, authors, venue, award, links }: PublicationCardProps) {
   return (
     <div className="py-4 flex flex-col gap-0.5">
-      <p className="text-[17px] font-semibold font-serif leading-snug text-[#0A0A0A] dark:text-[#FAFAF8]">
+      <p className="text-[17px] font-semibold font-serif leading-snug break-words text-[#0A0A0A] dark:text-[#FAFAF8]">
         {title}
       </p>
-      <p className="text-body italic leading-snug text-[#6B6B6B] dark:text-gray-400">
+      <p className="text-body italic leading-snug break-words text-[#6B6B6B] dark:text-gray-400">
         {authors}
       </p>
-      <p className="text-body leading-snug text-[#6B6B6B] dark:text-gray-400">
+      <p className="text-body leading-snug break-words text-[#6B6B6B] dark:text-gray-400">
         {venue}
       </p>
       {award && (
