@@ -48,19 +48,22 @@ export type ProjectDetail = {
 export const PROJECT_DETAILS: Record<string, ProjectDetail> = {
 
   // ── project-alpha ────────────────────────────────────────────
-  'project-alpha': {
+  'vibopneumo': {
     description: (
       <>
-        FlexForm is a shape-changing interface that allows physical objects to
-        dynamically reconfigure their geometry in response to computational input.
-        By embedding distributed actuators within a compliant polymer substrate,
-        the system enables smooth, continuous deformation across a programmable
-        surface. Potential applications span{' '}
-        <InlineLink href="https://en.wikipedia.org/wiki/Haptic_technology" external>
-          haptic feedback
-        </InlineLink>
-        , assistive devices, and ambient information displays. This work was
-        supported by a research grant from the National Research Foundation.
+        Extensive research has been done in haptic feedback for texture simulation in virtual reality (VR). However, it is challenging
+to modify the perceived tactile texture of existing physical objects which usually serve as anchors for virtual objects in mixed reality (MR).
+In this paper, we present ViboPneumo, a finger-worn haptic device that uses vibratory-pneumatic feedback to modulate (i.e., increase and
+decrease) the perceived roughness of the material surface contacted by the user’s fingerpad while supporting the perceived sensation of
+other haptic properties (e.g., temperature or stickiness) in MR. Our device includes a silicone-based pneumatic actuator that can lift the user’s
+fingerpad on the physical surface to reduce the contact area for roughness decreasing, and an on-finger vibrator for roughness increasing.
+Our user-perception experimental results showed that the participants could perceive changes in roughness, both increasing and decreasing,
+compared to the original material surface. We also observed the overlapping roughness ratings among certain haptic stimuli (i.e., vibrotactile
+and pneumatic) and the originally perceived roughness of some materials without any haptic feedback. This suggests the potential
+to alter the perceived texture of one type of material to another in terms of roughness (e.g., modifying the perceived texture of ceramics
+as glass). Lastly, a user study of MR experience showed that ViboPneumo could significantly improve the MR user experience, particularly
+for visual-haptic matching, compared to the condition of a bare finger. We also demonstrated a few application scenarios for ViboPneumo.
+
       </>
     ),
     media: [

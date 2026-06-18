@@ -26,7 +26,7 @@ import type { ProjectItem } from '@/components/about/ResearchSection'
  */
 export const BIO_PHOTO = {
   src: 'https://picsum.photos/seed/profile/280/420', // ← replace with '/images/profile.jpg'
-  alt: 'Professor [Name]',                            // ← replace with the person's name
+  alt: 'Shaoyu Cai',                            // ← replace with the person's name
 }
 
 /**
@@ -35,8 +35,9 @@ export const BIO_PHOTO = {
  * external: false → internal page (e.g. "/publications")
  */
 export const BIO_LINKS: { label: string; href: string; external?: boolean }[] = [
-  { label: 'Google Scholar', href: 'https://scholar.google.com',  external: true },
-  { label: 'DBLP',           href: 'https://dblp.org',            external: true },
+  { label: 'NUS Profile',    href: 'https://cde.nus.edu.sg/edic/staff/cai-shaoyu/',  external: true },
+  { label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=wUpkNc8AAAAJ&hl=en',  external: true },
+  { label: 'DBLP',           href: 'https://dblp.org/pid/246/5542.html',            external: true },
   { label: 'ORCID',          href: 'https://orcid.org',           external: true },
 ]
 
@@ -49,13 +50,13 @@ export const BIO_LINKS: { label: string; href: string; external?: boolean }[] = 
  */
 export const BIO_TEXT = (
   <>
-    Dr. [Name] is an Associate Professor in the School of Computing and Information Systems.
-    Their research lies at the intersection of human-computer interaction, computational
-    fabrication, and tangible user interfaces, with a focus on designing systems that bridge
-    the physical and digital worlds. Current projects investigate shape-changing materials,
-    interactive textiles, and novel sensing technologies for embodied computing. Work from
-    the lab has been published at premier venues including CHI, UIST, and SIGGRAPH, and has
-    received recognition from the international research community.
+    Dr. Shaoyu Cai is currently a lecturer at the Engineering Design and Innovation Centre (EDIC), 
+    College of Design and Engineering, National University of Singapore (NUS). He also serves as Co-director in NUS Immersive Reality Lab. 
+    He received his Ph.D. degree from School of Creative Media, City University of Hong Kong (2023). 
+    His research objective is to explore how to develop “touchable” computer interfaces to enable people to have physical interaction in the virtual world. 
+    He strongly believes multimodal interaction can provide greater benefit and experience to users in extended reality (XR) environments, including virtual and augmented reality (VR & AR). 
+    Currently, his research interest mainly focuses on Human-Computer Interaction (HCI), particularly in the areas of Multimodal Interfaces, Immersive Reality, Wearables, and Haptic Perception.
+
   </>
 )
 
@@ -85,52 +86,49 @@ export const RESEARCH_DIRECTIONS: {
   projects: ProjectItem[]
 }[] = [
   {
-    title: 'Shape-Changing Interfaces',        // ← H2 heading, edit freely
+    title: 'Haptic rendering displays',        // ← H2 heading, edit freely
     description: (
       <>
-        We explore how physical objects can dynamically change their shape, texture, and
-        mechanical properties in response to computational input, enabling new forms of{' '}
-        <InlineLink href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" external>
-          human-computer interaction
-        </InlineLink>{' '}
-        beyond the flat screen.
+        I focus on the design and evaluation of multimodal human-computer interfaces that 
+        integrate multiple sensory modalities, such as touch, temperature, smell, sound, and visual feedback, 
+        to enhance user perception, interaction, and experience in immersive environments.
       </>
     ),
     projects: [
       {
-        title: 'Project Alpha',
-        imageSrc: '/images/demo-large.jpg', // ← replace with your image
+        title: 'ViboPneumo',
+        imageSrc: '/images/vibopneumo.png', // ← replace with your image
       },
       {
-        title: 'Project Beta',
-        imageSrc: 'https://picsum.photos/seed/beta/600/400',
+        title: 'ViChewReality',
+        imageSrc: '/images/chewvr.png',
       },
       {
-        title: 'Project Gamma',
-        imageSrc: 'https://picsum.photos/seed/gamma/600/400',
+        title: 'ThermOuch',
+        imageSrc: '/images/Thermouch.png',
       },
       {
-        title: 'Project Delta',
-        imageSrc: 'https://picsum.photos/seed/delta/600/400',
+        title: 'ThermOlfactory',
+        imageSrc: '/images/dis26.png',
       },
     ],
   },
   {
-    title: 'Wearable & Textile Computing',
+    title: 'Tactile Intelligence',
     description:
-      'Our work investigates smart textiles and body-worn devices that integrate computational capabilities into everyday clothing and accessories, making interactive technology invisible yet pervasive.',
+      'My research explores how intelligent systems can leverage human perceptual abilities, such as tactile sensing, and imaginative processes, such as cross-modal generation, to create more natural human–computer interactions and next-generation embodied AI.',
     projects: [
       {
-        title: 'Project Epsilon',
-        imageSrc: 'https://picsum.photos/seed/epsilon/600/400',
+        title: 'CMVT',
+        imageSrc: '/images/CMVT.png',
       },
       {
-        title: 'Project X',
-        imageSrc: 'https://picsum.photos/seed/projectx/600/400',
+        title: 'FrictGAN',
+        imageSrc: '/images/FrictGAN.png',
       },
       {
-        title: 'Project Eta',
-        imageSrc: 'https://picsum.photos/seed/eta/600/400',
+        title: 'TacTransformer',
+        imageSrc: '/images/tactransformer.png',
       },
     ],
   },
@@ -165,43 +163,48 @@ export const OUR_APPROACH: {
       title: 'Engineering & Scientific Impact', // ← H3 heading
       description: (
         <>
-          We develop novel computational systems and fabrication methods that advance the
-          state of the art in{' '}
-          <InlineLink href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" external>
-            human-computer interaction
-          </InlineLink>{' '}
-          research.
+          We develop novel hardware systems and prototypes that advance the
+          state of the art in human-computer interaction and immersive reality and publish at{' '}
+          <InlineLink href="https://siggraph.org" external>SIGGRAPH</InlineLink>, {' '}
+          <InlineLink href="https://www.computer.org/csdl/proceedings/1000791" external>IEEE VR</InlineLink>,{' '}
+          <InlineLink href="https://dl.acm.org/conference/chi" external>CHI</InlineLink>,{' '}
+          <InlineLink href="https://dl.acm.org/conference/cscw" external>CSCW</InlineLink>,{' '}
+          and related top conferences in HCI and showcased in these top venues with awards:
         </>
       ),
       bullets: [
         <>
-          Publications at{' '}
-          <InlineLink href="https://dl.acm.org/conference/chi" external>CHI</InlineLink>,{' '}
-          <InlineLink href="https://uist.acm.org" external>UIST</InlineLink>,{' '}
-          <InlineLink href="https://siggraph.org" external>SIGGRAPH</InlineLink>, and related venues
+          ACM CSCW, Best Paper Honorable Mention Award, 2025
         </>,
-        <>
-          Open-source toolkits and fabrication pipelines on{' '}
-          <InlineLink href="https://github.com" external>GitHub</InlineLink>
-        </>,
-        'Collaborations with engineering and materials science departments',
+        'IEEE PAINE, Best Paper Award, 2025',
+        'ACM ICHEC (ChineseCHI), Best Demo Honorable Mention Award, 2025',
+        'ACM SIGGRAPH Asia Emerging Technologies, Best Demo Audience Choice Award, 2025',
+        'International Exhibition of Inventions Geneva, Silver Award, 2024',
+        'International Exhibition of Inventions Geneva, Bronze Award, 2023',
+        'Eurogaphics ICAT-EGVE, Best Paper Audience Choice Award, 2020',
       ],
     },
     {
-      title: 'Design & Art Impact',
+      title: 'Education & Teaching Impact',
       description:
-        'We engage with design and art communities to explore how interactive technology can be expressive, aesthetic, and culturally meaningful.',
+        'I employ project-based and studio-based learning in partnership with industry to engage students in real-world challenges, fostering innovative solutions that bridge academic knowledge and practical impact. I am currrrently working at the following stuidos in NUS:',
       bullets: [
         <>
-          Exhibited works at{' '}
+          Intelligent Wearable Studio{' '}
           <InlineLink href="https://example.com" external>design festivals</InlineLink> and galleries
         </>,
-        'Partnerships with industrial design and architecture schools',
+        <>
+          Creaative Media Studio{' '}
+          <InlineLink href="https://example.com" external>design festivals</InlineLink> 
+        </>,
+        'NUS Annual Teaching Excellence Award, 2026',
+        'NUS Annual Teaching Excellence Award, 2026',
+        'NUS College of Design and Engineering College Educator Award, 2026',
         'Studio-based research methods alongside engineering approaches',
       ],
     },
     {
-      title: 'Community Engagement',
+      title: 'Industial Collaboration',
       description:
         'We believe research should be accessible and beneficial beyond academia, and actively work to share our findings with broader audiences.',
       bullets: [
