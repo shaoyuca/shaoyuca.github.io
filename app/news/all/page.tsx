@@ -4,7 +4,7 @@ import InlineLink from '@/components/ui/InlineLink'
 
 export default function AllNewsPage() {
   return (
-    <main className="max-w-content px-10 pt-6 pb-section">
+    <main className="max-w-content mx-auto px-10 pt-6 pb-section">
       <div className="mb-8">
         <InlineLink href="/news">← News</InlineLink>
       </div>

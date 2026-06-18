@@ -16,7 +16,7 @@ function PaperSkeleton() {
 
 export default function PublicationsLoading() {
   return (
-    <main className="max-w-content px-10 pt-6 pb-section">
+    <main className="max-w-content mx-auto px-10 pt-6 pb-section">
       <Skeleton className="h-10 w-56 mb-10" />
 
       <Skeleton className="h-7 w-16 mb-1" />

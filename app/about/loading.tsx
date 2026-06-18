@@ -2,7 +2,7 @@ import { Skeleton, SkeletonImage } from '@/components/ui/Skeleton'
 
 export default function AboutLoading() {
   return (
-    <main className="max-w-content px-10 pt-6 pb-section">
+    <main className="max-w-content mx-auto px-10 pt-6 pb-section">
       {/* H1 */}
       <Skeleton className="h-8 md:h-10 w-32 md:w-40 mb-8 md:mb-10" />
 

@@ -2,7 +2,7 @@ import { Skeleton } from '@/components/ui/Skeleton'
 
 export default function AllNewsLoading() {
   return (
-    <main className="max-w-content px-10 pt-6 pb-section">
+    <main className="max-w-content mx-auto px-10 pt-6 pb-section">
       <Skeleton className="h-4 w-16 mb-8" />
       <Skeleton className="h-10 w-40 mb-10" />
       <div className="space-y-4">

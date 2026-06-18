@@ -14,7 +14,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
 
   if (!detail) {
     return (
-      <main className="max-w-content px-10 pt-6 pb-section">
+      <main className="max-w-content mx-auto px-10 pt-6 pb-section">
         <h1 className="text-h1 font-bold font-serif mb-4">{title}</h1>
         <p className="text-body text-[#6B6B6B] dark:text-gray-400">
           Project detail page coming soon.
@@ -24,7 +24,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
   }
 
   return (
-    <main className="max-w-content px-10 pt-6 pb-section">
+    <main className="max-w-content mx-auto px-10 pt-6 pb-section">
       <h1 className="text-h1 font-bold font-serif mb-6">{title}</h1>
 
       {detail.description && (

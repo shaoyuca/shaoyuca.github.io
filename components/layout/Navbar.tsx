@@ -3,16 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect, useRef } from 'react'
-
-const NAV_LINKS = [
-  { href: '/about', label: 'About' },
-  { href: '/news', label: 'News' },
-  { href: '/portfolio', label: 'Portfolio' },
-  { href: '/publications', label: 'Publications' },
-  { href: '/team', label: 'Team' },
-  { href: '/courses', label: 'Courses' },
-  { href: '/opportunities', label: 'Opportunities' },
-]
+import { PROFESSOR_NAME, NAV_LINKS } from '@/content/site'
 
 function isActive(pathname: string, href: string) {
   if (href === '/portfolio') return pathname === '/portfolio' || pathname.startsWith('/projects/')
@@ -66,7 +57,7 @@ export default function Navbar() {
         {/* Row 1: name + controls */}
         <div className="flex items-center justify-between py-3 md:py-5">
           <Link href="/about" className="text-display font-bold font-serif text-[#0A0A0A] dark:text-[#FAFAF8]">
-            Professor Name
+            {PROFESSOR_NAME}
           </Link>
           <div className="flex items-center gap-4 translate-y-1 md:translate-y-0">
             <button

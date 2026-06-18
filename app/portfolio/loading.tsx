@@ -6,7 +6,7 @@ export default function PortfolioLoading() {
       {/* Hero banner */}
       <SkeletonImage className="h-32 md:h-48 w-full rounded-none" />
 
-      <div className="max-w-content px-10 pt-8 pb-section">
+      <div className="max-w-content mx-auto px-10 pt-8 pb-section">
         {/* Intro paragraph */}
         <div className="space-y-2 mb-10 max-w-prose">
           <Skeleton className="h-4 w-full" />

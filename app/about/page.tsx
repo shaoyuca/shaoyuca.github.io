@@ -11,7 +11,7 @@ function Divider() {
 
 export default function AboutPage() {
   return (
-    <main className="max-w-content px-10 pt-6 pb-section">
+    <main className="max-w-content mx-auto px-10 pt-6 pb-section">
       <h1 className="text-h1 font-bold font-serif mb-6">About</h1>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-8 mb-16 md:items-start">

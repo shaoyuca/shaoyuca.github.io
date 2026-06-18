@@ -9,7 +9,7 @@ export default function NewsPage() {
   const hasMore = NEWS_ITEMS.length > PREVIEW_LIMIT
 
   return (
-    <main className="max-w-content px-10 pt-6 pb-section">
+    <main className="max-w-content mx-auto px-10 pt-6 pb-section">
       <h1 className="text-h1 font-bold font-serif mb-10">News</h1>
       <NewsGrid items={items} />
       {hasMore && (

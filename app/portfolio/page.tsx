@@ -8,7 +8,7 @@ export default function PortfolioPage() {
     <main>
       <PortfolioHero {...PORTFOLIO_HERO} />
 
-      <div className="max-w-content px-10 pt-8 pb-10">
+      <div className="max-w-content mx-auto px-10 pt-8 pb-10">
         <p className="text-body text-[#6B6B6B] dark:text-gray-400">
           {PORTFOLIO_INTRO}
         </p>
@@ -21,7 +21,7 @@ export default function PortfolioPage() {
             imageSrc={direction.imageSrc}
             imageAlt={direction.imageAlt}
           />
-          <div className="max-w-content px-10">
+          <div className="max-w-content mx-auto px-10">
             <div className="divide-y divide-gray-100 dark:divide-gray-800">
               {direction.projects.map((project) => (
                 <ProjectCard key={project.title} {...project} />

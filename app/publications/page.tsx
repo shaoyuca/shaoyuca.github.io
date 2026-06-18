@@ -3,7 +3,7 @@ import PublicationCard from '@/components/publications/PublicationCard'
 
 export default function PublicationsPage() {
   return (
-    <main className="max-w-content px-10 pt-6 pb-section">
+    <main className="max-w-content mx-auto px-10 pt-6 pb-section">
       <h1 className="text-h1 font-bold font-serif mb-6">Publications</h1>
 
       {PUBLICATIONS.map((group) => (
