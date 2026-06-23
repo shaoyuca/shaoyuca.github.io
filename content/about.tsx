@@ -86,7 +86,7 @@ export const RESEARCH_DIRECTIONS: {
   projects: ProjectItem[]
 }[] = [
   {
-    title: 'Haptic rendering displays',        // ← H2 heading, edit freely
+    title: 'Multimodal \& Embodied Interfaces',        // ← H2 heading, edit freely
     description: (
       <>
         I focus on the design and evaluation of multimodal human-computer interfaces that 
@@ -173,47 +173,53 @@ export const OUR_APPROACH: {
         </>
       ),
       bullets: [
-        <>
-          ACM CSCW, Best Paper Honorable Mention Award, 2025
-        </>,
-        'IEEE PAINE, Best Paper Award, 2025',
-        'ACM ICHEC (ChineseCHI), Best Demo Honorable Mention Award, 2025',
-        'ACM SIGGRAPH Asia Emerging Technologies, Best Demo Audience Choice Award, 2025',
-        'International Exhibition of Inventions Geneva, Silver Award, 2024',
-        'International Exhibition of Inventions Geneva, Bronze Award, 2023',
-        'Eurogaphics ICAT-EGVE, Best Paper Audience Choice Award, 2020',
+        '🏆 Best Paper Honorable Mention Award — ACM CSCW 2025',
+        '🏆 Best Paper Award — IEEE PAINE 2025',
+        '🏆 Best Demo Honorable Mention Award — ACM ICHEC (ChineseCHI) 2025',
+        '🏆 Best Demo Audience Choice Award — ACM SIGGRAPH Asia Emerging Technologies 2025',
+        '🏆 Silver Award — International Exhibition of Inventions Geneva 2024',
+        '🏆 Bronze Award — International Exhibition of Inventions Geneva 2023',
+        '🏆 Best Paper Audience Choice Award — Eurographics ICAT-EGVE 2020',
       ],
     },
     {
       title: 'Education & Teaching Impact',
-      description:
-        'I employ project-based and studio-based learning in partnership with industry to engage students in real-world challenges, fostering innovative solutions that bridge academic knowledge and practical impact. I am currrrently working at the following stuidos in NUS:',
-      bullets: [
-        <>
-          Intelligent Wearable Studio{' '}
-          <InlineLink href="https://example.com" external>design festivals</InlineLink> and galleries
-        </>,
-        <>
-          Creaative Media Studio{' '}
-          <InlineLink href="https://example.com" external>design festivals</InlineLink> 
-        </>,
-        'NUS Annual Teaching Excellence Award, 2026',
-        'NUS Annual Teaching Excellence Award, 2026',
-        'NUS College of Design and Engineering College Educator Award, 2026',
-        'Studio-based research methods alongside engineering approaches',
+      blocks: [
+        {
+          description:
+            'I employ project-based and studio-based learning in partnership with industry to engage students in real-world challenges, fostering innovative solutions that bridge academic knowledge and practical impact. I am currently working at the following studios in NUS:',
+          bullets: [
+            <>
+              <InlineLink href="https://cde.nus.edu.sg/edic/projects/wearable-tech-2026/" external>Intelligent Wearable Studio</InlineLink>, 2026-current
+            </>,
+            <>
+              <InlineLink href="https://cde.nus.edu.sg/edic/projects/immersive-heritage-2025/" external>Creative Media/Multi-sensory VR Studio</InlineLink>, 2024-current
+            </>
+          ],
+        },
+        {
+          description:
+            'My teaching is grounded in studio-based research methods alongside engineering approaches and has been recognized through institutional awards:',
+          bullets: [
+            '🏆 Annual Teaching Excellence Award — NUS 2026',
+            '🏆 College Educator Award — NUS College of Design and Engineering 2025',
+          ],
+        },
       ],
     },
     {
       title: 'Industial Collaboration',
       description:
-        'We believe research should be accessible and beneficial beyond academia, and actively work to share our findings with broader audiences.',
+        'We work with industry, public institutions, and community organizations to translate research into real-world impact through innovation, design, and public engagement. Some representative industrial collaborators:',
       bullets: [
-        'Workshops and hands-on demonstrations for the public',
         <>
-          Educational programmes for{' '}
-          <InlineLink href="https://example.com" external>K–12 students</InlineLink>
+          <InlineLink href="https://example.com" external>OceanX</InlineLink>
         </>,
-        'Outreach partnerships with community organisations',
+        <>
+          <InlineLink href="https://example.com" external>National Heritage Board (NHB)</InlineLink>
+        </>,        <>
+          <InlineLink href="https://example.com" external>Alexandra Hospital</InlineLink>
+        </>,
       ],
     },
   ],

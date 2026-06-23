@@ -3,8 +3,12 @@ import InlineLink from '@/components/ui/InlineLink'
 
 export type ApproachItem = {
   title: string
-  description: React.ReactNode
-  bullets: React.ReactNode[]
+  description?: React.ReactNode
+  bullets?: React.ReactNode[]
+  blocks?: {
+    description: React.ReactNode
+    bullets: React.ReactNode[]
+  }[]
   linkLabel?: string
   linkHref?: string
 }
@@ -28,16 +32,34 @@ function ApproachEntry({ item }: { item: ApproachItem }) {
       <h3 className="text-h3 font-bold font-serif text-[#0A0A0A] dark:text-[#FAFAF8] mb-2">
         {item.title}
       </h3>
-      <p className="text-body text-[#6B6B6B] dark:text-gray-400 mb-3">
-        {item.description}
-      </p>
-      <ul className="list-disc list-outside ml-5 space-y-1 mb-4">
-        {item.bullets.map((bullet, i) => (
-          <li key={i} className="text-body text-[#6B6B6B] dark:text-gray-400">
-            {bullet}
-          </li>
-        ))}
-      </ul>
+      {item.description && (
+        <p className="text-body text-[#6B6B6B] dark:text-gray-400 mb-3">
+          {item.description}
+        </p>
+      )}
+      {item.bullets && (
+        <ul className="list-disc list-outside ml-5 space-y-1 mb-4">
+          {item.bullets.map((bullet, i) => (
+            <li key={i} className="text-body text-[#6B6B6B] dark:text-gray-400">
+              {bullet}
+            </li>
+          ))}
+        </ul>
+      )}
+      {item.blocks?.map((block, blockIndex) => (
+        <div key={blockIndex} className="mb-4">
+          <p className="text-body text-[#6B6B6B] dark:text-gray-400 mb-3">
+            {block.description}
+          </p>
+          <ul className="list-disc list-outside ml-5 space-y-1">
+            {block.bullets.map((bullet, i) => (
+              <li key={i} className="text-body text-[#6B6B6B] dark:text-gray-400">
+                {bullet}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
       {item.linkHref && item.linkLabel && (
         <InlineLink href={item.linkHref}>
           {item.linkLabel}

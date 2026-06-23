@@ -50,15 +50,22 @@ export type Course = {
  */
 export const COURSES: Course[] = [
   {
-    title: 'Interactive Systems Studio',
-    href: 'https://example.edu/courses/interactive-systems-studio',
+    title: 'CDE5312: Beyond the Surface: Exploring Interactive Wearables',
+    href: 'https://blog.nus.edu.sg/multimodalwearablelab/welcome/',
     linkLabel: 'Course website',
     // Plain description: edit the words between <> and </>.
     description: (
       <>
-        A project-based studio introducing methods for sketching, prototyping, and
-        evaluating interactive systems. Students practice iterative design while learning
-        how to communicate technical ideas through demos, critique, and concise writing.
+        This course aims to explore the limitless potential of interactive wearables — 
+        from virtual and augmented reality to smart textiles and artificial intelligence-based 
+        health-monitoring devices and immersive gaming gear. In this course, students will 
+        learn about designing wearable interfaces for seamless interaction among wearables, 
+        users, and environments; experimenting with sensors, actuators, microcontrollers, 
+        and artificial intelligence-driven applications; and leveraging hardware and software 
+        for wearable system prototyping. After completing this course, students should be able 
+        to apply interactive wearable technologies to tackle real-world projects, turning ideas 
+        into tangible solutions for various applications such as virtual and augmented reality, 
+        gaming, fashion, communication, and beyond.
       </>
     ),
     videos: [
@@ -72,15 +79,19 @@ export const COURSES: Course[] = [
       'Students produce working prototypes, short design reports, and final demonstrations that connect interaction concepts to everyday contexts.',
   },
   {
-    title: 'Human-Centered Research Methods',
-    href: 'https://example.edu/courses/human-centered-research-methods',
+    title: 'CDE3301: Ideas to Proof-of-concept',
+    href: 'https://cde.nus.edu.sg/edic/projects/cde3301-projects-2026/',
     linkLabel: 'Course website',
     // Course without videos: simply omit the videos field.
     description: (
       <>
-        This course covers interview planning, observation, study design, and qualitative
-        synthesis for computing research. Selected readings are discussed alongside
-        practical exercises and small field assignments.
+        CDE3301 Ideas to Proof-of-Concept is a two-semester project course which focuses on conceptualisation, 
+        implementation and realisation of a product solution to solve an identified problem while providing 
+        experience in an integrated product design and development process where technology plays a central role. 
+        Through lecture classes, studio sessions and an open-ended project, students learn how to create a product 
+        idea to address a problem of interest, generate and evaluate concept designs, and build proof-of-concept 
+        prototypes for user testing. Students also learn how to work in a multidisciplinary team and with various 
+        stakeholders.
       </>
     ),
     studentWork:

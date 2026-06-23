@@ -7,7 +7,7 @@
 /**
  * YOUR NAME — shown in the top-left corner of every page.
  */
-export const PROFESSOR_NAME = 'Professor Name'
+export const PROFESSOR_NAME = 'Shaoyu Cai'
 
 /**
  * Shown in the browser tab and search-engine results.

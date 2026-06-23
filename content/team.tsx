@@ -19,7 +19,7 @@ export type TeamSectionContent = {
  * or research community. Plain text is enough.
  */
 export const TEAM_INTRO =
-  'Our team brings together students, researchers, and collaborators who explore human-centered computing, interactive systems, and design-led technology research. This placeholder can be replaced with the lab mission, working style, or a short welcome note.'
+  'Our team brings together research staff and students working on multimodal interaction, immersive reality, wearable interfaces, haptics, and design-led technology research.'
 
 
 // ── 2. TEAM SECTIONS ────────────────────────────────────────────
@@ -34,21 +34,28 @@ export const TEAM_INTRO =
  */
 export const TEAM_SECTIONS: TeamSectionContent[] = [
   {
-    title: 'Current',
+    title: 'Current Research Members',
     members: [
-      'Research Fellow - studies interactive systems for everyday creative work.',
-      'PhD Student - develops prototypes for tangible and embodied computing.',
-      'Graduate Research Assistant - supports user studies, documentation, and lab demonstrations.',
-      'Visiting Student - explores design methods for accessible physical interfaces.',
+      'Huanhuan Liu - Research Fellow, 2026.06-present.',
+      'Tao Lin - Research Engineer, 2025.05-present.',
+      'Tingxiao Wu - MSc Engineering Design and Innovation, 2025.08-present.',
+      'Yuheng Tao - MSc Engineering Design and Innovation, 2025.08-present.',
+      'Matthew Chan - Research Engineer, co-advised with Prof. Khoo Eng Tat, 2026.01-present.',
     ],
   },
   {
-    title: 'Alumni',
+    title: 'Alumni Members',
     members: [
-      'Former Research Assistant - contributed to early-stage prototyping and study preparation.',
-      'Former Graduate Student - worked on interaction techniques for responsive materials.',
-      'Former Visiting Scholar - collaborated on design workshops and research publications.',
-      'Former Lab Coordinator - supported project organization and public-facing demos.',
+      'Tao Lin - MSc Engineering Design and Innovation, now Research Staff at NUS, 2024.01-2025.04.',
+      'Fuxi Ouyang - MSc Engineering Design and Innovation, now PhD Student at SUTD, 2024.01-2024.12.',
+      'Quanhao Gan - MSc Engineering Design and Innovation, now Research Staff at HKBU, 2024.08-2025.12.',
+      'Jiarui Feng - MSc Engineering Design and Innovation, now Research Staff at HKUST, 2024.08-2025.12.',
+      'Hao Zheng - MSc Engineering Design and Innovation, now at Bambu, 2024.08-2025.12.',
+      'Huzhaorui Kang - MSc Engineering Design and Innovation, now PhD Student at NUS, 2025.01-2025.08.',
+      'Rui Zhang - MSc Engineering Design and Innovation, 2024.08-2025.12.',
+      'Zhansen Shi - Research Engineer, co-advised with Prof. Khoo Eng Tat, 2024.01-2025.08.',
+      'Shaun Ong - Research Engineer, co-advised with Prof. Khoo Eng Tat, 2024.01-2025.12.',
+      'Xinpeng Liu - Research Intern, SMU, 2024.05-2025.09.',
     ],
   },
   {
