@@ -42,7 +42,7 @@ import type { MediaItem } from '@/components/projects/MediaGrid'
 export type ProjectDetail = {
   description: React.ReactNode
   media?: MediaItem[]
-  publication?: string  // paste the citation text as-is (Google Scholar / any style)
+  publication?: React.ReactNode  // paste the citation text as-is (Google Scholar / any style)
 }
 
 export const PROJECT_DETAILS: Record<string, ProjectDetail> = {
@@ -66,34 +66,255 @@ for visual-haptic matching, compared to the condition of a bare finger. We also 
 
       </>
     ),
-    media: [
+    //media: [
       // Image + Image
-      {
-        type: 'image',
-        src: 'https://picsum.photos/seed/flexform-1/800/450',
-        alt: 'FlexForm prototype showing deformation sequence',
-      },
-      {
-        type: 'image',
-        src: 'https://picsum.photos/seed/flexform-2/800/450',
-        alt: 'Close-up of the actuator array embedded in the substrate',
-      },
+      //{
+       // type: 'image',
+      //  src: 'https://picsum.photos/seed/flexform-1/800/450',
+      //  alt: 'FlexForm prototype showing deformation sequence',
+      //},
+      //{
+      //  type: 'image',
+      //  src: 'https://picsum.photos/seed/flexform-2/800/450',
+      //  alt: 'Close-up of the actuator array embedded in the substrate',
+      //},
       // Image + Video
+      media: [
+        {
+          type: 'image',
+          src: '/images/vibopneumo.png',
+          alt: 'ViboPneumo finger-worn vibratory-pneumatic haptic device',
+        },
+        {
+          type: 'image',
+          src: '/images/vibopneumo.gif',
+          alt: 'ViboPneumo haptic device demonstration',
+        },
+        {
+          type: 'image',
+          src: '/images/viboabric.gif',
+          alt: 'ViboPneumo haptic device demonstration',
+        },
+        {
+          type: 'video',
+          embedUrl: 'https://www.youtube.com/embed/6g25o7i7kSM',
+          title: 'ViboPneumo project demonstration video',
+        },
+      ],
+      publication: 'Shaoyu Cai, Zhenlin Chen, Haichen Gao, Ya Huang, Qi Zhang, Xinge Yu, and Kening Zhu. "ViboPneumo: A Vibratory-Pneumatic Finger-Worn Haptic Device for Altering Perceived Texture Roughness in Mixed Reality." IEEE Transactions on Visualization & Computer Graphics. 2024.',
+    },
+   // ── ViChewReality ────────────────────────────────────────────
+   'vichewreality': {
+    description: (
+      <>
+        VirCHEW Reality investigates on-face kinesthetic feedback for enhancing food-intake experiences in virtual reality. 
+        The project explores how wearable pneumatic actuation around the face can simulate chewing-related sensations, 
+        helping virtual food interactions feel more embodied and realistic.
+        <br />
+        <br />
+        By linking visual food experiences with synchronized facial haptic feedback, the system contributes to a broader 
+        design space for multisensory VR, including virtual dining, food education, entertainment, and remote experience sharing.
+      </>
+    ),
+    media: [
       {
         type: 'image',
-        src: 'https://picsum.photos/seed/flexform-3/800/450',
-        alt: 'User study session with FlexForm device',
+        src: '/images/ChewVR.png',
+        alt: 'VirCHEW Reality on-face kinesthetic feedback prototype',
+      },
+      {
+        type: 'image',
+        src: '/images/chewvr.gif',
+        alt: 'VirCHEW Reality demonstration',
+      },
+      {
+        type: 'image',
+        src: '/images/chewing-gif.gif',
+        alt: 'VirCHEW Reality demonstration',
       },
       {
         type: 'video',
-        // Replace with your actual YouTube embed URL:
-        // open the video → Share → Embed → copy the src="…" URL
-        // Example below uses Big Buck Bunny (Blender Foundation, CC BY 3.0)
-        embedUrl: 'https://www.youtube.com/embed/aqz-KE-bpKQ',
-        title: 'FlexForm — project demonstration video',
+        embedUrl: 'https://www.youtube.com/embed/s-c_svMOjBQ',
+        title: 'VirCHEW Reality project demonstration video',
       },
     ],
-    publication: 'Chen, Alice, Bob Smith, Carol Williams, and David Lee. "FlexForm: Continuous Shape Deformation for Programmable Physical Interfaces." In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI \'26). ACM, New York, NY, USA, 2026.',
+    publication: (
+      <>
+        Qingqin Liu, Ziqi Fang, Jiayi Wu, Shaoyu Cai, Jianhui Yan, Tiande Mo, Shuk Ching Chan, and Kening Zhu. "VirCHEW Reality: On-Face Kinesthetic Feedback for Enhancing Food-Intake Experience in Virtual Reality." SIGGRAPH 2025 Conference Papers, pp. 1-12. 2025.
+        <br />
+        <br />
+        Qingqin Liu, Ziqi Fang, Jiayi Wu, Shaoyu Cai, Jianhui Yan, Tiande Mo, Shuk Ching Chan, and Kening Zhu. "ChewBit: Enhancing Haptic Feedback with an On-Face Pneumatic Interface for Realistic Food Texture in VR." Proceedings of the SIGGRAPH Asia 2025 Emerging Technologies, pp. 1-3. 2025. Best Audience Choice Award — SIGGRAPH Asia 2025 Emerging Technologies.
+      </>
+    ),
+  },
+
+  // ── ThermOuch ────────────────────────────────────────────────
+  'thermouch': {
+    description: (
+      <>
+        ThermOuch is a wearable thermo-haptic device that uses the thermal grill illusion to induce pain-like 
+        sensations in virtual reality without causing physical harm. By combining warm and cold thermal stimuli, 
+        the system creates an illusory nociceptive sensation that can support more expressive and immersive VR experiences.
+        <br />
+        <br />
+        The project contributes a wearable interaction technique for rendering uncomfortable or warning sensations in VR, 
+        opening possibilities for training, simulation, accessibility research, and affective immersive experiences.
+      </>
+    ),
+    media: [
+      {
+        type: 'image',
+        src: '/images/tgi.png',
+        alt: 'ThermOuch wearable thermo-haptic device',
+      },
+      {
+        type: 'image',
+        src: '/images/thermouch.gif',
+        alt: 'ThermOuch demonstration',
+      },
+      {
+        type: 'image',
+        src: '/images/app1.gif',
+        alt: 'ThermOuch demonstration',
+      },
+      {
+        type: 'video',
+        embedUrl: 'https://www.youtube.com/embed/iCKXcDOM4B4',
+        title: 'ThermOuch project demonstration video',
+      },
+    ],
+    publication: 'Haichen Gao, Shaoyu Cai, Yuhong Wu, and Kening Zhu. "ThermOuch: A Wearable Thermo-Haptic Device for Inducing Pain Sensation in Virtual Reality through Thermal Grill Illusion." SIGGRAPH Asia 2024 Conference Papers, pp. 1-12. 2024.',
+  },
+
+  // ── ThermOlfactory ───────────────────────────────────────────
+  'thermolfactory': {
+    description: (
+      <>
+        ThermOlfactory explores how localized nasal thermal stimulation can modulate olfactory perception. 
+        Instead of only adding scent output, the project studies how temperature cues around the nose can change 
+        how people perceive smell, creating a compact approach for influencing olfactory experience.
+        <br />
+        <br />
+        This work supports the design of multisensory interfaces for XR, learning, entertainment, and experiential 
+        media where smell perception is important but traditional scent delivery can be difficult to control.
+      </>
+    ),
+    media: [
+      {
+        type: 'image',
+        src: '/images/dis2611.png',
+        alt: 'ThermOlfactory localized nasal thermal stimulation system',
+      },
+      {
+        type: 'image',
+        src: '/images/dis26.gif',
+        alt: 'ThermOlfactory demonstration',
+      },
+    ],
+    publication: 'Rui Zhang, Yitian Ding, Ningchang Xiong, and Shaoyu Cai. "Modulating Olfactory Perception through Localized Nasal Thermal Stimulation." Proceedings of the 2026 Designing Interactive Systems Conference (DIS 2026), pp. 931-946. 2026.',
+  },
+
+  // ── CMVT ─────────────────────────────────────────────────────
+  'cmvt': {
+    description: (
+      <>
+        Existing psychophysical studies have revealed that the cross-modal visual-tactile perception is 
+        common for humans performing daily activities. However, it is still challenging to build the algorithmic 
+        mapping from one modality space to another, namely the cross-modal visual-tactile (CMVT) data translation/generation, 
+        which could be potentially important for robotic operation. CMVT studies visual-tactile cross-modal data generation for haptic texture simulation. The project uses a 
+        residue-fusion generative adversarial network with feature-matching and perceptual losses to generate tactile 
+        signals from visual texture information.
+        <br />
+        <br />
+        By learning relationships between what materials look like and how they may feel, the work supports scalable 
+        haptic content generation for virtual and augmented reality, reducing the need to manually record tactile data 
+        for every new material. Our approach could be potentially applied in various robotic operational tasks, such as object recognition in
+low-light conditions and light-weight object grasping.
+      </>
+    ),
+    media: [
+      {
+        type: 'image',
+        src: '/images/CMVT.png',
+        alt: 'CMVT visual-tactile cross-modal data generation overview',
+      },
+      {
+        type: 'image',
+        src: '/images/CMVT2.png',
+        alt: 'CMVT visual-tactile cross-modal data generation overview',
+      },
+    ],
+    publication: 'Shaoyu Cai, Kening Zhu, Yuki Ban, and Takuji Narumi. "Visual-Tactile Cross-Modal Data Generation using Residue-Fusion GAN with Feature-Matching and Perceptual Losses." IEEE Robotics and Automation Letters (RA-L), vol. 6, no. 4, pp. 7525-7532.',
+  },
+
+  // ── FrictGAN ─────────────────────────────────────────────────
+  'frictgan': {
+    description: (
+      <>
+        FrictGAN generates frictional tactile signals from fabric texture images using generative adversarial networks. 
+        The project focuses on translating visual material appearance into friction cues that can be rendered through 
+        tactile displays for more realistic fabric simulation.
+        <br />
+        <br />
+        This approach contributes to data-driven texture rendering by enabling haptic systems to synthesize plausible 
+        tactile feedback from image inputs, supporting virtual shopping, material design, and immersive training scenarios.
+      </>
+    ),
+    media: [
+      {
+        type: 'image',
+        src: '/images/ganbased.png',
+        alt: 'FrictGAN demonstration',
+      },
+      {
+        type: 'image',
+        src: '/images/cg.png',
+        alt: 'FrictGAN image-to-friction generation project',
+      },
+
+      {
+        type: 'image',
+        src: '/images/frictgan.gif',
+        alt: 'FrictGAN demonstration',
+      },
+      {
+        type: 'image',
+        src: '/images/newmaterial.gif',
+        alt: 'FrictGAN demonstration',
+      },
+    ],
+    publication: (
+      <>
+        Shaoyu Cai, Yuki Ban, Takuji Narumi, and Kening Zhu. "FrictGAN: Frictional Signal Generation from Fabric Texture Images using Generative Adversarial Network." International Conference on Artificial Reality and Telexistence & Eurographics Symposium on Virtual Environments, pp. 11-15. The Eurographics Association, 2020.
+        <br />
+        <br />
+        Shaoyu Cai, Lu Zhao, Yuki Ban, Takuji Narumi, Yue Liu, and Kening Zhu. "GAN-based Image-to-Friction Generation for Tactile Simulation of Fabric Material." Computers & Graphics, vol. 102, pp. 460-473, Feb. 2022.
+      </>
+    ),
+  },
+
+  // ── TacTransformer ───────────────────────────────────────────
+  'tactransformer': {
+    description: (
+      <>
+        TacTransformer explores multi-modal transformer-based tactile signal generation for haptic texture simulation 
+        in virtual and augmented reality. The project uses transformer models to learn relationships across visual, 
+        tactile, and material-related signals for generating haptic feedback.
+        <br />
+        <br />
+        The work advances data-driven haptic rendering by investigating how modern sequence models can synthesize 
+        tactile signals that support more scalable and realistic material experiences in immersive environments 
+        under differnet applied forces and scanning directions on different material surfaces through tool-based interaction.
+      </>
+    ),
+    media: [
+      {
+        type: 'image',
+        src: '/images/tactrans.png',
+        alt: 'TacTransformer tactile signal generation project',
+      },
+    ],
+    publication: 'Shaoyu Cai and Kening Zhu. "Multi-modal Transformer-based Tactile Signal Generation for Haptic Texture Simulation of Materials in Virtual and Augmented Reality." 2022 IEEE International Symposium on Mixed and Augmented Reality Adjunct (ISMAR-Adjunct).',
   },
 
   // ── project-beta ─────────────────────────────────────────────

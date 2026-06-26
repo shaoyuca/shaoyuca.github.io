@@ -42,9 +42,9 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
       {detail.publication && (
         <section>
           <h2 className="text-h2 font-bold font-serif mb-4">Publication</h2>
-          <p className="text-body text-[#6B6B6B] dark:text-gray-400">
+          <div className="text-body text-[#6B6B6B] dark:text-gray-400">
             {detail.publication}
-          </p>
+          </div>
         </section>
       )}
     </main>
