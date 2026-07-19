@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Playfair_Display, Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
-import { SITE_TITLE, SITE_DESCRIPTION } from '@/content/site'
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from '@/content/site'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -15,8 +15,12 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
+  alternates: {
+    canonical: '/',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -23,6 +23,11 @@ export const SITE_TITLE = 'Academic Website'
 export const SITE_DESCRIPTION = 'Personal academic website'
 
 /**
+ * Public URL used for canonical links and social/search metadata.
+ */
+export const SITE_URL = 'https://shaoyucai.com'
+
+/**
  * NAVIGATION BAR LINKS
  *
  * Controls which links appear in the top navigation bar.
