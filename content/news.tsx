@@ -25,6 +25,18 @@ export type NewsItem = {
  */
 export const NEWS_ITEMS: NewsItem[] = [
   {
+    date: 'Aug 2026',
+    text: <>Two works were accepted by <Strong>SIGGRAPH ASIA 2026 Emerging Technologies</Strong>!</>,
+  },
+  {
+    date: 'Jul 2026',
+    text: <>One paper was accepted by <Strong>Information Sciences</Strong>!</>,
+  },
+  {
+    date: 'Jul 2026',
+    text: <><Strong>OceanXL</Strong> was accepted by <Strong>SIGGRAPH ASIA 2026</Strong> as a technical paper!</>,
+  },
+  {
     date: 'Apr 2026',
     text: <>One paper was accepted by <Strong>DIS 2026</Strong>. Congrats to Rui and Yitian!</>,
   },

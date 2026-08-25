@@ -18,6 +18,15 @@ export const PUBLICATIONS: YearGroup[] = [
   {
     year: 2026,
     papers: [
+      
+      {
+        title: 'QDRF: Quantized and distilled robust fusion for incomplete data in multimodal sentiment analysis',
+        authors: (
+          <>Jiachen Hou, Zheyan Cheng, Chen Xing, Yushi Li, Nan Xiang, <Strong>Shaoyu Cai</Strong>, Jie Liu, Yushan Pan </>
+        ),
+        venue: 'Information Sciences (2026): 123966.',
+        links: [],
+      },
       {
         title: 'Modulating Olfactory Perception through Localized Nasal Thermal Stimulation',
         authors: (
