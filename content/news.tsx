@@ -25,6 +25,14 @@ export type NewsItem = {
  */
 export const NEWS_ITEMS: NewsItem[] = [
   {
+    date: 'Oct 2026',
+    text: <><Strong>Super-Resolution Liquid-metal Tactile Sensor</Strong> was accepted by <Strong>Nature npj Flexible Electronics</Strong>!</>,
+  },
+  {
+    date: 'Sept 2026',
+    text: <><Strong>From Prototype to Public Showcase</Strong> was accepted by <Strong>SIGGRAPH ASIA 2026 Educator Forms</Strong>! This is a collaborative work with OceanX Education to show how we contribute to Ocean education!</>,
+  },
+  {
     date: 'Aug 2026',
     text: <>Two works were accepted by <Strong>SIGGRAPH ASIA 2026 Emerging Technologies</Strong>!</>,
   },
@@ -34,7 +42,7 @@ export const NEWS_ITEMS: NewsItem[] = [
   },
   {
     date: 'Jul 2026',
-    text: <><Strong>OceanXL</Strong> was accepted by <Strong>SIGGRAPH ASIA 2026</Strong> as a technical paper!</>,
+    text: <><Strong>OceanXL</Strong> was accepted by <Strong>SIGGRAPH ASIA 2026</Strong> as a technical paper! This is a collaborative work with University of Bristol and OceanX!</>,
   },
   {
     date: 'Apr 2026',

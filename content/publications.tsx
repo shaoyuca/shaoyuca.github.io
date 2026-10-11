@@ -18,7 +18,46 @@ export const PUBLICATIONS: YearGroup[] = [
   {
     year: 2026,
     papers: [
-      
+      {
+        title: 'OceanXL: Large-scale Underwater 3D Gaussian Splatting via Block Partitioning and Adaptive Pruning',
+        authors: (
+          <>Haoran Wang, <Strong>Shaoyu Cai</Strong>, Adrian Azzarelli, Zhuodong Jiang, Guoxi Huang, Eng Tat Khoo, Brett Seymour, Fan Zhang, David Bull, and Nantheera Anantrasirichai</>
+        ),
+        venue: 'SIGGRAPH Asia 2026 Conference Papers (SA Conference Papers ’26), December 01–04, 2026, Kuala Lumpur, Malaysia.',
+        links: [],
+      },
+      {
+        title: 'PneuStep: A Soft Pneumatic-based Foot Haptic Device for Walking Experience on Different Terrains in VR',
+        authors: (
+          <>Huzhaorui Kang, Zhuolun Li, Tingxiao Wu, Yuheng Tao, Quanhao Gan, Tao Lin, Kongpyung (Justin) Moon, and <Strong>Shaoyu Cai</Strong></>
+        ),
+        venue: 'SIGGRAPH Asia 2026 Emerging Technologies (SA Emerging Technologies ’26), December 01–04, 2026, Kuala Lumpur, Malaysia.',
+        links: [],
+      },
+      {
+        title: 'Demonstration of Breatho: Cadence-Synchronized Breathing Guidance for Amateur Runners',
+        authors: (
+          <>Yuheng Tao, Tingxiao Wu, and <Strong>Shaoyu Cai</Strong></>
+        ),
+        venue: 'SIGGRAPH Asia 2026 Emerging Technologies (SA Emerging Technologies ’26), December 01–04, 2026, Kuala Lumpur, Malaysia.',
+        links: [],
+      },
+      {
+        title: 'Geometry beneath the Waves: Dense Priors for Sparse-View Underwater 3D Gaussian Splatting',
+        authors: (
+          <>Harvey Caldeira, Haoran Wang, Guoxi Huang, <Strong>Shaoyu Cai</Strong>, Rachel Fu, and Nantheera Anantrasirichai</>
+        ),
+        venue: 'SIGGRAPH Asia 2026 Posters (SA Posters ’26), December 01–04, 2026, Kuala Lumpur, Malaysia.',
+        links: [],
+      },
+      {
+        title: 'From Prototype to Public Showcase: Immersive Experiences and Interactive Media for Ocean Education',
+        authors: (
+          <>Kay Vasey, Lionel Taillens, Shermaine Siow, <Strong>Shaoyu Cai</Strong>, and Tit Meng Lim</>
+        ),
+        venue: 'SIGGRAPH Asia 2026 Educator’s Forum (SA Educator’s Forum ’26), December 01–04, 2026, Kuala Lumpur, Malaysia.',
+        links: [],
+      },
       {
         title: 'QDRF: Quantized and distilled robust fusion for incomplete data in multimodal sentiment analysis',
         authors: (
