@@ -36,7 +36,7 @@ export const TEAM_SECTIONS: TeamSectionContent[] = [
   {
     title: 'Current Research Members',
     members: [
-      //'Huanhuan Liu - Research Fellow, 2026.06-present.',
+      'Huanhuan Liu - Research Fellow, PhD from Donghua University, 2026.10-present.',
       'Tao Lin - Research Engineer, 2025.05-present.',
       'Tingxiao Wu - MSc Engineering Design and Innovation, 2025.08-present.',
       'Yuheng Tao - MSc Engineering Design and Innovation, 2025.08-present.',
