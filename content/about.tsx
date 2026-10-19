@@ -125,6 +125,10 @@ export const RESEARCH_DIRECTIONS: {
     ),
     projects: [
       {
+        title: 'Tactile Skin',
+        imageSrc: '/images/liquid.png',
+      },
+      {
         title: 'CMVT',
         imageSrc: '/images/CMVT.png',
       },

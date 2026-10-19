@@ -22,8 +22,8 @@ export type ProjectCardProps = {
 export default function ProjectCard({ title, authors, venue, keywords, award, links, mediaSrc, mediaAlt, mediaPosition }: ProjectCardProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-5 md:gap-8 py-8">
-      {/* Media — self-start prevents grid stretch from breaking the 4:3 ratio */}
-      <div className="relative w-full aspect-[4/3] overflow-hidden bg-gray-200 dark:bg-gray-700 self-start">
+      {/* Media — self-start prevents grid stretch from breaking the 16:9 ratio */}
+      <div className="relative w-full aspect-video overflow-hidden bg-gray-200 dark:bg-gray-700 self-start">
         <Image
           src={withBasePath(mediaSrc)}
           alt={mediaAlt}

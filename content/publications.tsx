@@ -19,6 +19,14 @@ export const PUBLICATIONS: YearGroup[] = [
     year: 2026,
     papers: [
       {
+        title: 'Super-resolution Tactile Sensing through Geometric Encoding in Liquid-Metal Microchannels',
+        authors: (
+          <><Strong>Shaoyu Cai</Strong>, Jiarui Feng, Tingxiao Wu, Hao Zheng, Xu Cheng, Kening Zhu, and Benjamin C. K. Tee</>
+        ),
+        venue: 'Nature npj Flexible Electronics (2026).',
+        links: [],
+      },
+      {
         title: 'OceanXL: Large-scale Underwater 3D Gaussian Splatting via Block Partitioning and Adaptive Pruning',
         authors: (
           <>Haoran Wang, <Strong>Shaoyu Cai</Strong>, Adrian Azzarelli, Zhuodong Jiang, Guoxi Huang, Eng Tat Khoo, Brett Seymour, Fan Zhang, David Bull, and Nantheera Anantrasirichai</>

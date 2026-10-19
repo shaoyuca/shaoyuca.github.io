@@ -34,7 +34,7 @@ export const PORTFOLIO_INTRO = (
     This portfolio presents my research projects with my stduents and collaborators, spanning{' '}
     <Strong>wearable haptic interfaces</Strong>,{' '}
     <Strong>multimodal interaction and perception</Strong>, and{' '}
-    <Strong>data-driven texture rendering</Strong>. These projects explore how touch,
+    <Strong>tactile intelligence</Strong>. These projects explore how touch,
     thermal feedback, smell, force, motion, and intelligent sensing can create richer
     interaction in virtual, mixed, and everyday environments. The work
     has been published and showcased at top venues about <Strong>computer graphics</Strong> and <Strong>human-computer interaction</Strong>, including{' '}
@@ -94,7 +94,7 @@ export const DIRECTIONS: Direction[] = [
         venue: <>2020 IEEE Conference on Virtual Reality and 3D User Interfaces, pp. 248-257 (IEEE VR).</>,
         keywords: <>Keywords: Thermal feedback, pneumatic actuation, material simulation</>,
         links: [
-          { label: 'PDF',   href: 'https://www.researchgate.net/publication/342058113_ThermAirGlove_A_Pneumatic_Glove_for_Thermal_Perception_and_Material_Identification_in_Virtual_Reality#read' },
+          { label: 'PDF',   href: 'https://shaoyucai.com/mypage/assets/img/thermairglove_paper.pdf' },
           { label: 'Video', href: 'https://www.youtube.com/watch?v=VgsmilcO1yU' },
           ],
         mediaSrc: '/images/thermairglove.gif',
@@ -217,18 +217,32 @@ Zichen Zhao, Xu Guo, Enming Song, Hui Wu, Zuankai Wang, Zhaoqian Xie, Kening Zhu
     ],
   },
   {
-    title: 'Data-driven Texture Rendering',
+    title: 'Tactile Intelligence',
     imageSrc: 'https://picsum.photos/seed/stress/1600/900',
-    imageAlt: 'Stress test direction banner',
+    imageAlt: 'Tactile Intelligence',
     projects: [
+      {
+        title: 'Super-resolution Tactile Sensing through Geometric Encoding in Liquid-Metal Microchannels',
+        authors: <><Strong>Shaoyu Cai</Strong>, Jiarui Feng, Tingxiao Wu, Hao Zheng, Xu Cheng, Kening Zhu, and Benjamin C. K. Tee</>,
+        venue: <>Nature npj Flexible Electronics, 2026.</>,
+        keywords: <>Keywords: Super-resolution tactile sensing, liquid-metal electronic skin, geometric encoding</>,
+        links: [
+          { label: 'PDF',     href: 'https://doi.org/10.1038/s41528-026-00651-4' },
+          { label: 'Video 1', href: 'https://www.youtube.com/watch?v=hM1SGQ3wPYg' },
+          { label: 'Video 2', href: 'https://www.youtube.com/watch?v=Cm-BPZhaWdc' },
+        ],
+        mediaSrc: '/images/liquidmetal.gif',
+        mediaAlt: 'Liquid-metal tactile skin with force-modulated handwriting demo',
+      },
       {
         title: 'Visual-Tactile Cross-Modal Data Generation using Residue-Fusion GAN with Feature-Matching and Perceptual Losses',
         authors: <><Strong>Shaoyu Cai</Strong>, Kening Zhu, Yuki Ban, and Takuji Narumi</>,
         venue: <>IEEE Robotics and Automation Letters (RA-L), vol. 6, no. 4, pp. 7525-7532 with IROS 2021 presentation. </>,
         links: [
+          { label: 'PDF', href: 'https://arxiv.org/pdf/2107.05468' },
         ],
         keywords: <>Keywords: Cross-modal visual-tactile generation, Generative adversarial networks (GANs), Tactile intelligence </>,
-        mediaSrc: '/images/CMVT.png',
+        mediaSrc: '/images/cmvt2.png',
         mediaAlt: 'Visual-tactile cross-modal data generation project',
       },
       {

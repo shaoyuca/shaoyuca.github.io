@@ -20,7 +20,7 @@ export default function PortfolioLoading() {
             key={i}
             className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-5 md:gap-8 pb-8 mb-8 border-b border-gray-100 dark:border-gray-800"
           >
-            <SkeletonImage className="h-48 md:h-[186px] w-full" />
+            <SkeletonImage className="aspect-video w-full self-start" />
             <div className="space-y-3">
               <Skeleton className="h-5 md:h-6 w-3/4" />
               <Skeleton className="h-4 w-1/2" />

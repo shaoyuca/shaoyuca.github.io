@@ -128,9 +128,13 @@ export const COURSES: Course[] = [
         <br />
         • <InlineLink href="https://cde.nus.edu.sg/edic/projects/showcase/edic-project-showcase-2024/" external>Immersive Reality Studio</InlineLink>
         <br />
-        • <InlineLink href="https://cde.nus.edu.sg/edic/projects/immersive-heritage-2025/" external>Multi-sensory VR Studio</InlineLink>
+        • <InlineLink href="https://cde.nus.edu.sg/edic/projects/immersive-heritage-2025/" external>Multi-Sensory Immersive Reality for Cultural Heritage Studio</InlineLink>
         <br />
         • <InlineLink href="https://cde.nus.edu.sg/edic/projects/wearable-tech-2026/" external>Intelligent Wearable Studio</InlineLink>
+        <br />
+        • <InlineLink href="https://cde.nus.edu.sg/edic/projects/creative-tech-2027/" external>Creative Media Studio</InlineLink>
+        <br />
+        • <InlineLink href="https://digital.wpi.edu/concern/student_works/tq57nw31d?locale=en" external>NUS-WPI Joint Studio: Interactive Qualifying Projects (Worcester Polytechnic Institute Global Learning Program)</InlineLink>
       </>
     ),
     studentWork:
