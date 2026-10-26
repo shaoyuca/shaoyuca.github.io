@@ -227,9 +227,9 @@ Zichen Zhao, Xu Guo, Enming Song, Hui Wu, Zuankai Wang, Zhaoqian Xie, Kening Zhu
         venue: <>Nature npj Flexible Electronics, 2026.</>,
         keywords: <>Keywords: Super-resolution tactile sensing, liquid-metal electronic skin, geometric encoding</>,
         links: [
-          { label: 'PDF',     href: 'https://doi.org/10.1038/s41528-026-00651-4' },
-          { label: 'Video 1', href: 'https://www.youtube.com/watch?v=hM1SGQ3wPYg' },
-          { label: 'Video 2', href: 'https://www.youtube.com/watch?v=Cm-BPZhaWdc' },
+          { label: 'PDF' },
+          { label: 'Video 1' },
+          { label: 'Video 2' },
         ],
         mediaSrc: '/images/liquidmetal.gif',
         mediaAlt: 'Liquid-metal tactile skin with force-modulated handwriting demo',

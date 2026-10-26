@@ -214,42 +214,6 @@ for visual-haptic matching, compared to the condition of a bare finger. We also 
     publication: 'Rui Zhang, Yitian Ding, Ningchang Xiong, and Shaoyu Cai. "Modulating Olfactory Perception through Localized Nasal Thermal Stimulation." Proceedings of the 2026 Designing Interactive Systems Conference (DIS 2026), pp. 931-946. 2026.',
   },
 
-  // ── Liquid Metal Tactile Skin ────────────────────────────────
-  'tactile-skin': {
-    description: (
-      <>
-        High-resolution tactile skins usually get finer spatial resolution by adding more sensing elements, which
-        increases wiring, readout, and structural complexity. This project presents a thin liquid-metal electronic skin
-        that achieves super-resolution touch localisation and normal-force sensing from only four resistive channels, by
-        encoding contact information directly into the geometry of interlocked liquid-metal microchannels.
-        <br />
-        <br />
-        A kernel-based fast simulator predicts topology-dependent resistance responses without repeated full-field
-        finite-element simulations, enabling noise-aware optimisation of channel geometry for spatial distinguishability.
-        A hierarchical mixture-of-experts (HMoE) decoder then jointly estimates contact position and force. Across three
-        independently fabricated devices, the sensor achieved a mean localisation RMSE of 0.230 mm; a representative device
-        reached 0.228 mm localisation RMSE and 0.043 N force RMSE, corresponding to a super-resolution factor of 58.3.
-        <br />
-        <br />
-        Force-modulated handwriting and a wearable pressure-tiered keyboard demonstrate continuous and discrete
-        human–machine interaction, with the keyboard achieving 95.38% joint key-and-mode classification accuracy.
-      </>
-    ),
-    media: [
-      {
-        type: 'video',
-        embedUrl: 'https://www.youtube.com/embed/hM1SGQ3wPYg',
-        title: 'Force-modulated handwriting on the liquid-metal tactile skin',
-      },
-      {
-        type: 'video',
-        embedUrl: 'https://www.youtube.com/embed/Cm-BPZhaWdc',
-        title: 'Wearable pressure-tiered keyboard on the liquid-metal tactile skin',
-      },
-    ],
-    publication: 'Shaoyu Cai, Jiarui Feng, Tingxiao Wu, Hao Zheng, Xu Cheng, Kening Zhu, and Benjamin C. K. Tee. "Super-resolution tactile sensing through geometric encoding in liquid-metal microchannels." Nature npj Flexible Electronics. 2026. https://doi.org/10.1038/s41528-026-00651-4',
-  },
-
   // ── CMVT ─────────────────────────────────────────────────────
   'cmvt': {
     description: (

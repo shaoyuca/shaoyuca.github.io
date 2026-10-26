@@ -114,7 +114,12 @@ export const COURSES: Course[] = [
     linkLabel: 'Course website',
     // Course without videos: simply omit the videos field.
     description: (
-      <>
+      <>Tactile Skin
+      High-resolution tactile skins usually get finer spatial resolution by adding more sensing elements, which increases wiring, readout, and structural complexity. This project presents a thin liquid-metal electronic skin that achieves super-resolution touch localisation and normal-force sensing from only four resistive channels, by encoding contact information directly into the geometry of interlocked liquid-metal microchannels.
+      
+      A kernel-based fast simulator predicts topology-dependent resistance responses without repeated full-field finite-element simulations, enabling noise-aware optimisation of channel geometry for spatial distinguishability. A hierarchical mixture-of-experts (HMoE) decoder then jointly estimates contact position and force. Across three independently fabricated devices, the sensor achieved a mean localisation RMSE of 0.230 mm; a representative device reached 0.228 mm localisation RMSE and 0.043 N force RMSE, corresponding to a super-resolution factor of 58.3.
+      
+      Force-modulated handwriting and a wearable pressure-tiered keyboard demonstrate continuous and discrete human–machine interaction, with the keyboard achieving 95.38% joint key-and-mode classification accuracy.
         CDE3301 Ideas to Proof-of-Concept is a two-semester project course which focuses on conceptualisation, 
         implementation and realisation of a product solution to solve an identified problem while providing 
         experience in an integrated product design and development process where technology plays a central role. 

@@ -4,7 +4,8 @@ import { withBasePath } from '@/lib/assets'
 
 export type ProjectLink = {
   label: string
-  href: string
+  // Omit href to show the label as "coming soon" without a link
+  href?: string
 }
 
 export type ProjectCardProps = {
@@ -56,11 +57,17 @@ export default function ProjectCard({ title, authors, venue, keywords, award, li
         </p>
         {links.length > 0 && (
           <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-body">
-            {links.map((link) => (
-              <InlineLink key={link.label} href={link.href} external>
-                {link.label}
-              </InlineLink>
-            ))}
+            {links.map((link) =>
+              link.href ? (
+                <InlineLink key={link.label} href={link.href} external>
+                  {link.label}
+                </InlineLink>
+              ) : (
+                <span key={link.label} className="text-[#6B6B6B] dark:text-gray-400">
+                  {link.label} (coming soon)
+                </span>
+              )
+            )}
           </div>
         )}
       </div>
